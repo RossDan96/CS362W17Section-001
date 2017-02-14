@@ -1,0 +1,2135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="17" failures="0" name="org.cs362.dominion.CardTest" time="0.29" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b15"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/nfs/stak/students/r/rossda/cs362/Dominion"/>
+    <property name="java.runtime.version" value="1.8.0_111-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/nfs/stak/students/r/rossda/cs362/Dominion/target/cobertura/cobertura.ser"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.10.0-327.36.3.el7.x86_64"/>
+    <property name="user.home" value="/nfs/stak/students/r/rossda"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="rossda"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-1.b15.el7_2.x86_64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="project.build.outputDirectory" value="/nfs/stak/students/r/rossda/cs362/Dominion/target/generated-classes/cobertura"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="org.cs362.dominion.CardTest" name="testDominionShort" time="0.198"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="ambassadorTest" time="0.001"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="mineTest" time="0.002"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="gardensTest" time="0.002"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="testDominionLong" time="0.034">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at org.cs362.dominion.Player.gain(Player.java:78)
+	at org.cs362.dominion.Player.buyCard(Player.java:195)
+	at org.cs362.dominion.CardTest.testDominionLong(CardTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+    <system-out>numPile: 46
+player-1 gains  
+	Copper
+numPile: 45
+player-1 gains  
+	Copper
+numPile: 44
+player-1 gains  
+	Copper
+numPile: 43
+player-1 gains  
+	Copper
+numPile: 42
+player-1 gains  
+	Copper
+numPile: 41
+player-1 gains  
+	Copper
+numPile: 40
+player-1 gains  
+	Copper
+numPile: 8
+player-1 gains  
+	Estate
+numPile: 7
+player-1 gains  
+	Estate
+numPile: 6
+player-1 gains  
+	Estate
+reshuffle the deck of the player player-1 to draw FIVE cards
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+player-1 draws  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+numPile: 39
+player-2 gains  
+	Copper
+numPile: 38
+player-2 gains  
+	Copper
+numPile: 37
+player-2 gains  
+	Copper
+numPile: 36
+player-2 gains  
+	Copper
+numPile: 35
+player-2 gains  
+	Copper
+numPile: 34
+player-2 gains  
+	Copper
+numPile: 33
+player-2 gains  
+	Copper
+numPile: 5
+player-2 gains  
+	Estate
+numPile: 4
+player-2 gains  
+	Estate
+numPile: 3
+player-2 gains  
+	Estate
+reshuffle the deck of the player player-2 to draw FIVE cards
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+Player: player-1 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Cutpurse
+Player.buyCard Card: 
+	Adventurer
+Player.buyCard Card: 
+	Smithy
+Player.buyCard Card: 
+	Embargo
+Curses? 0
+numPile: 10
+numPile: 9
+player-1 gains  
+	Embargo
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 discards  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+Player: player-2 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Embargo
+Curses? 0
+numPile: 8
+numPile: 7
+player-2 gains  
+	Embargo
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 draws  
+	Estate
+player-2 draws  
+	Copper
+player-2 draws  
+	Estate
+player-2 draws  
+	Estate
+player-2 draws  
+	Copper
+Player: player-1 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Copper
+Curses? 0
+numPile: 32
+numPile: 31
+player-1 gains  
+	Copper
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+reshuffle the deck of the player player-1 to draw FIVE cards
+player-1 draws  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+player-1 draws  
+	Copper
+Player: player-2 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Curse
+Player opted to not buy a Curse
+Player.buyCard Card: 
+	Remodel
+Player.buyCard Card: 
+	Estate
+Curses? 0
+numPile: 2
+numPile: 1
+player-2 gains  
+	Estate
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 discards  
+	Estate
+player-2 discards  
+	Estate
+reshuffle the deck of the player player-2 to draw FIVE cards
+player-2 draws  
+	Copper
+player-2 draws  
+	Estate
+player-2 draws  
+	Estate
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+Player: player-1 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Mine
+Player.buyCard Card: 
+	Copper
+Curses? 0
+numPile: 30
+numPile: 29
+player-1 gains  
+	Copper
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 discards  
+	Estate
+player-1 draws  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+Player: player-2 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Gardens
+Player.buyCard Card: 
+	Adventurer
+Player.buyCard Card: 
+	Province
+Player.buyCard Card: 
+	Cutpurse
+Player.buyCard Card: 
+	Baron
+Player.buyCard Card: 
+	Gardens
+Player.buyCard Card: 
+	Duchy
+Player.buyCard Card: 
+	Province
+Player.buyCard Card: 
+	Mine
+Player.buyCard Card: 
+	Cutpurse
+Player.buyCard Card: 
+	Duchy
+Player.buyCard Card: 
+	Adventurer
+Player.buyCard Card: 
+	Baron
+Player.buyCard Card: 
+	Baron
+Player.buyCard Card: 
+	Silver
+Curses? 0
+numPile: 40
+numPile: 39
+player-2 gains  
+	Silver
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 discards  
+	Estate
+player-2 draws  
+	Embargo
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+player-2 draws  
+	Estate
+player-2 draws  
+	Estate
+Player: player-1 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+Player opted to not buy anything
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Embargo
+reshuffle the deck of the player player-1 to draw FIVE cards
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+Player: player-2 is playing
+Player.actionPhase Card: 
+	Embargo
+TODO Embargo Code******************************************
++2 Gold.
+Trash this card. Put an Embargo token on top of a Supply pile.
+Embargo
+player-2 trashes  
+	Embargo
+Player player-2 put an embargo counter on  
+	Smithy----------------------------------------------------------------------------
+When a player buys a card, he gains a Curse card per Embargo token on that pile.
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Silver
+Curses? 0
+numPile: 38
+numPile: 37
+player-2 gains  
+	Silver
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 discards  
+	Estate
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+reshuffle the deck of the player player-2 to draw FIVE cards
+player-2 draws  
+	Estate
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Embargo
+TODO Embargo Code******************************************
++2 Gold.
+Trash this card. Put an Embargo token on top of a Supply pile.
+Embargo
+player-1 trashes  
+	Embargo
+Player player-1 put an embargo counter on  
+	Copper----------------------------------------------------------------------------
+When a player buys a card, he gains a Curse card per Embargo token on that pile.
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Tribute
+Curses? 0
+numPile: 10
+numPile: 9
+player-1 gains  
+	Tribute
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+Player: player-2 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Cutpurse
+Curses? 0
+numPile: 10
+numPile: 9
+player-2 gains  
+	Cutpurse
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 draws  
+	Copper
+player-2 draws  
+	Silver
+player-2 draws  
+	Copper
+player-2 draws  
+	Silver
+player-2 draws  
+	Estate
+Player: player-1 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Smithy
+Player.buyCard Card: 
+	Feast
+Player.buyCard Card: 
+	Gardens
+Player.buyCard Card: 
+	Smithy
+Player.buyCard Card: 
+	Duchy
+Player.buyCard Card: 
+	Silver
+Curses? 0
+numPile: 36
+numPile: 35
+player-1 gains  
+	Silver
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 discards  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+reshuffle the deck of the player player-1 to draw FIVE cards
+player-1 draws  
+	Copper
+player-1 draws  
+	Silver
+Player: player-2 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Cutpurse
+Curses? 0
+numPile: 8
+numPile: 7
+player-2 gains  
+	Cutpurse
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 draws  
+	Copper
+player-2 draws  
+	Estate
+player-2 draws  
+	Estate
+reshuffle the deck of the player player-2 to draw FIVE cards
+player-2 draws  
+	Silver
+player-2 draws  
+	Estate
+Player: player-1 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+Player opted to not buy anything
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 draws  
+	Tribute
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+Player: player-2 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Adventurer
+Player.buyCard Card: 
+	Ambassador
+Curses? 0
+numPile: 10
+numPile: 9
+player-2 gains  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 discards  
+	Estate
+player-2 discards  
+	Estate
+player-2 draws  
+	Copper
+player-2 draws  
+	Cutpurse
+player-2 draws  
+	Silver
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Tribute
+TODO Tribute Code******************************************
+The player to your left reveals then discards the top two cards of his deck.
+For each differently named card revealed, if it is an...
+Action Card, +2 Actions
+Treasure Card, +2 Gold
+Victory card, +2 Cards
+player-1 discards  
+	Tribute
+player-2 reveals Estate
+player-2 reveals Copper
+player-1gains 2 coins 
+player-1draws 2 cards
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Curse
+Player opted to not buy a Curse
+Player.buyCard Card: 
+	Ambassador
+Curses? 0
+numPile: 8
+numPile: 7
+player-1 gains  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 discards  
+	Estate
+player-1 draws  
+	Estate
+player-1 draws  
+	Copper
+reshuffle the deck of the player player-1 to draw FIVE cards
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+Player: player-2 is playing
+Player.actionPhase Card: 
+	Cutpurse
+TODO Cutpurse Code******************************************
++2 Gold
+Each other player discards a Copper card (or reveals a hand with no Copper).
+player-1 discards  
+	Copper
+player-2 discards  
+	Cutpurse
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Gold
+Curses? 0
+numPile: 30
+numPile: 29
+player-2 gains  
+	Gold
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+player-2 draws  
+	Cutpurse
+reshuffle the deck of the player player-2 to draw FIVE cards
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+Player: player-1 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Feast
+Player.buyCard Card: 
+	Tribute
+Player.buyCard Card: 
+	Province
+Player.buyCard Card: 
+	Silver
+Curses? 0
+numPile: 34
+numPile: 33
+player-1 gains  
+	Silver
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 draws  
+	Ambassador
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+Player: player-2 is playing
+Player.actionPhase Card: 
+	Cutpurse
+TODO Cutpurse Code******************************************
++2 Gold
+Each other player discards a Copper card (or reveals a hand with no Copper).
+player-1 discards  
+	Copper
+player-2 discards  
+	Cutpurse
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Gold
+Curses? 0
+numPile: 28
+numPile: 27
+player-2 gains  
+	Gold
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 draws  
+	Silver
+player-2 draws  
+	Estate
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+player-2 draws  
+	Estate
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Ambassador
+TODO Ambassador Code******************************************
+Reveal a card from your hand.
+Return up to 2 copies of it to the Supply.
+Then each other player gains a copy of it.
+player-1 discards  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+Player opted to not buy anything
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 draws  
+	Tribute
+player-1 draws  
+	Silver
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+Player: player-2 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Smithy
+Curses? 1
+numPile: 10
+numPile: 9
+player-2 gains  
+	Curse
+numPile: 10
+numPile: 9
+player-2 gains  
+	Smithy
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 discards  
+	Estate
+player-2 draws  
+	Cutpurse
+player-2 draws  
+	Copper
+player-2 draws  
+	Silver
+player-2 draws  
+	Ambassador
+player-2 draws  
+	Gold
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Tribute
+TODO Tribute Code******************************************
+The player to your left reveals then discards the top two cards of his deck.
+For each differently named card revealed, if it is an...
+Action Card, +2 Actions
+Treasure Card, +2 Gold
+Victory card, +2 Cards
+player-1 discards  
+	Tribute
+player-2 reveals Estate
+player-2 reveals Estate
+player-1draws 2 cards
+reshuffle the deck of the player player-1 to draw FIVE cards
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Gardens
+Curses? 0
+numPile: 10
+numPile: 9
+player-1 gains  
+	Gardens
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 discards  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+Player: player-2 is playing
+Player.actionPhase Card: 
+	Ambassador
+TODO Ambassador Code******************************************
+Reveal a card from your hand.
+Return up to 2 copies of it to the Supply.
+Then each other player gains a copy of it.
+player-2 discards  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Gold
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Duchy
+Curses? 0
+numPile: 8
+numPile: 7
+player-2 gains  
+	Duchy
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Cutpurse
+reshuffle the deck of the player player-2 to draw FIVE cards
+player-2 draws  
+	Copper
+player-2 draws  
+	Gold
+player-2 draws  
+	Copper
+player-2 draws  
+	Duchy
+player-2 draws  
+	Silver
+Player: player-1 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Mine
+Curses? 0
+numPile: 10
+numPile: 9
+player-1 gains  
+	Mine
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 draws  
+	Tribute
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+player-1 draws  
+	Ambassador
+player-1 draws  
+	Silver
+Player: player-2 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Gold
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Council_Room
+Curses? 0
+numPile: 10
+numPile: 9
+player-2 gains  
+	Council_Room
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Duchy
+player-2 draws  
+	Smithy
+player-2 draws  
+	Cutpurse
+player-2 draws  
+	Cutpurse
+player-2 draws  
+	Copper
+player-2 draws  
+	Ambassador
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Ambassador
+TODO Ambassador Code******************************************
+Reveal a card from your hand.
+Return up to 2 copies of it to the Supply.
+Then each other player gains a copy of it.
+player-1 discards  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Silver
+Curses? 0
+numPile: 32
+numPile: 31
+player-1 gains  
+	Silver
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 discards  
+	Tribute
+reshuffle the deck of the player player-1 to draw FIVE cards
+player-1 draws  
+	Ambassador
+player-1 draws  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+Player: player-2 is playing
+Player.actionPhase Card: 
+	Smithy
+player-2 draws  
+	Curse
+player-2 draws  
+	Estate
+player-2 draws  
+	Estate
+player-2 discards  
+	Smithy
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Gardens
+Player.buyCard Card: 
+	Copper
+Curses? 1
+numPile: 8
+numPile: 7
+player-2 gains  
+	Curse
+numPile: 28
+numPile: 27
+player-2 gains  
+	Copper
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 discards  
+	Estate
+player-2 discards  
+	Curse
+player-2 discards  
+	Ambassador
+player-2 discards  
+	Cutpurse
+player-2 discards  
+	Cutpurse
+player-2 draws  
+	Copper
+player-2 draws  
+	Estate
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+player-2 draws  
+	Silver
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Ambassador
+TODO Ambassador Code******************************************
+Reveal a card from your hand.
+Return up to 2 copies of it to the Supply.
+Last Card in revSet 
+	Copper
+Then each other player gains a copy of it.
+numPile: 27
+numPile: 26
+player-2 gains  
+	Copper
+player-1 discards  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Gold
+Player.buyCard Card: 
+	Baron
+Player.buyCard Card: 
+	Embargo
+Curses? 0
+numPile: 6
+numPile: 5
+player-1 gains  
+	Embargo
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Estate
+player-1 draws  
+	Silver
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+Player: player-2 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Silver
+Curses? 0
+numPile: 30
+numPile: 29
+player-2 gains  
+	Silver
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 draws  
+	Gold
+player-2 draws  
+	Copper
+player-2 draws  
+	Estate
+reshuffle the deck of the player player-2 to draw FIVE cards
+player-2 draws  
+	Copper
+player-2 draws  
+	Cutpurse
+Player: player-1 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Great_Hall
+Curses? 0
+numPile: 10
+numPile: 9
+player-1 gains  
+	Great_Hall
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Mine
+player-1 draws  
+	Silver
+player-1 draws  
+	Copper
+player-1 draws  
+	Tribute
+Player: player-2 is playing
+Player.actionPhase Card: 
+	Cutpurse
+TODO Cutpurse Code******************************************
++2 Gold
+Each other player discards a Copper card (or reveals a hand with no Copper).
+player-1 discards  
+	Copper
+player-2 discards  
+	Cutpurse
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Gold
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Baron
+Curses? 0
+numPile: 10
+numPile: 9
+player-2 gains  
+	Baron
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 draws  
+	Curse
+player-2 draws  
+	Smithy
+player-2 draws  
+	Gold
+player-2 draws  
+	Silver
+player-2 draws  
+	Copper
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Mine
+TODO Mine Code******************************************
+You may trash a Treasure from your hand. Gain a Treasure to your hand costing up to 3 more than it.
+true
+player-1 discards  
+	Mine
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Ambassador
+Curses? 0
+numPile: 6
+numPile: 5
+player-1 gains  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Tribute
+player-1 draws  
+	Copper
+player-1 draws  
+	Silver
+player-1 draws  
+	Gardens
+player-1 draws  
+	Estate
+reshuffle the deck of the player player-1 to draw FIVE cards
+player-1 draws  
+	Ambassador
+Player: player-2 is playing
+Player.actionPhase Card: 
+	Smithy
+player-2 draws  
+	Copper
+player-2 draws  
+	Estate
+player-2 draws  
+	Copper
+player-2 discards  
+	Smithy
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Gold
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Embargo
+Curses? 0
+numPile: 4
+numPile: 3
+player-2 gains  
+	Embargo
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 discards  
+	Curse
+player-2 draws  
+	Estate
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+player-2 draws  
+	Silver
+player-2 draws  
+	Estate
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Ambassador
+TODO Ambassador Code******************************************
+Reveal a card from your hand.
+Return up to 2 copies of it to the Supply.
+Then each other player gains a copy of it.
+player-1 discards  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Cutpurse
+Player.buyCard Card: 
+	Curse
+Player opted to not buy a Curse
+Player.buyCard Card: 
+	Ambassador
+Curses? 0
+numPile: 4
+numPile: 3
+player-1 gains  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 discards  
+	Gardens
+player-1 draws  
+	Tribute
+player-1 draws  
+	Silver
+player-1 draws  
+	Copper
+player-1 draws  
+	Mine
+player-1 draws  
+	Copper
+Player: player-2 is playing
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Adventurer
+Player.buyCard Card: 
+	Great_Hall
+Curses? 0
+numPile: 8
+numPile: 7
+player-2 gains  
+	Great_Hall
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 discards  
+	Estate
+player-2 draws  
+	Council_Room
+player-2 draws  
+	Duchy
+player-2 draws  
+	Copper
+player-2 draws  
+	Copper
+player-2 draws  
+	Ambassador
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Mine
+TODO Mine Code******************************************
+You may trash a Treasure from your hand. Gain a Treasure to your hand costing up to 3 more than it.
+true
+player-1 discards  
+	Mine
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Curse
+Player opted to not buy a Curse
+Player.buyCard Card: 
+	Silver
+Curses? 0
+numPile: 28
+numPile: 27
+player-1 gains  
+	Silver
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Tribute
+player-1 draws  
+	Copper
+player-1 draws  
+	Great_Hall
+player-1 draws  
+	Embargo
+player-1 draws  
+	Copper
+player-1 draws  
+	Silver
+Player: player-2 is playing
+Player.actionPhase Card: 
+	Ambassador
+TODO Ambassador Code******************************************
+Reveal a card from your hand.
+Return up to 2 copies of it to the Supply.
+Then each other player gains a copy of it.
+player-2 discards  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Adventurer
+Player.buyCard Card: 
+	Gold
+Player.buyCard Card: 
+	Mine
+Player.buyCard Card: 
+	Ambassador
+Player.buyCard Card: 
+	Cutpurse
+Player.buyCard Card: 
+	Council_Room
+Player.buyCard Card: 
+	Feast
+Player.buyCard Card: 
+	Tribute
+Player.buyCard Card: 
+	Feast
+Player.buyCard Card: 
+	Province
+Player.buyCard Card: 
+	Smithy
+Player.buyCard Card: 
+	Silver
+Player.buyCard Card: 
+	Gold
+Player.buyCard Card: 
+	Mine
+Player.buyCard Card: 
+	Adventurer
+Player.buyCard Card: 
+	Province
+Player.buyCard Card: 
+	Remodel
+Player.buyCard Card: 
+	Embargo
+Curses? 0
+numPile: 2
+numPile: 1
+player-2 gains  
+	Embargo
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Duchy
+player-2 discards  
+	Council_Room
+player-2 draws  
+	Curse
+player-2 draws  
+	Silver
+player-2 draws  
+	Cutpurse
+reshuffle the deck of the player player-2 to draw FIVE cards
+player-2 draws  
+	Gold
+player-2 draws  
+	Duchy
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Embargo
+TODO Embargo Code******************************************
++2 Gold.
+Trash this card. Put an Embargo token on top of a Supply pile.
+Embargo
+player-1 trashes  
+	Embargo
+Player player-1 put an embargo counter on  
+	Ambassador----------------------------------------------------------------------------
+When a player buys a card, he gains a Curse card per Embargo token on that pile.
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+Player opted to not buy anything
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Great_Hall
+player-1 draws  
+	Estate
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Copper
+player-1 draws  
+	Ambassador
+Player: player-2 is playing
+Player.actionPhase Card: 
+	Cutpurse
+TODO Cutpurse Code******************************************
++2 Gold
+Each other player discards a Copper card (or reveals a hand with no Copper).
+player-1 discards  
+	Copper
+player-2 discards  
+	Cutpurse
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Gold
+Player.playTreasure Card: 
+	Silver
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Smithy
+Curses? 1
+numPile: 6
+numPile: 5
+player-2 gains  
+	Curse
+numPile: 8
+numPile: 7
+player-2 gains  
+	Smithy
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Duchy
+player-2 discards  
+	Curse
+player-2 draws  
+	Great_Hall
+player-2 draws  
+	Copper
+player-2 draws  
+	Smithy
+player-2 draws  
+	Gold
+player-2 draws  
+	Estate
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Ambassador
+TODO Ambassador Code******************************************
+Reveal a card from your hand.
+Return up to 2 copies of it to the Supply.
+Last Card in revSet 
+	Copper
+Then each other player gains a copy of it.
+numPile: 26
+numPile: 25
+player-2 gains  
+	Copper
+player-1 discards  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Smithy
+Player.buyCard Card: 
+	Remodel
+Player.buyCard Card: 
+	Copper
+Curses? 1
+numPile: 4
+numPile: 3
+player-1 gains  
+	Curse
+numPile: 24
+numPile: 23
+player-1 gains  
+	Copper
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 draws  
+	Estate
+reshuffle the deck of the player player-1 to draw FIVE cards
+player-1 draws  
+	Curse
+player-1 draws  
+	Ambassador
+player-1 draws  
+	Silver
+player-1 draws  
+	Copper
+Player: player-2 is playing
+Player.actionPhase Card: 
+	Smithy
+player-2 draws  
+	Ambassador
+player-2 draws  
+	Copper
+player-2 draws  
+	Estate
+player-2 discards  
+	Smithy
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Gold
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Mine
+Curses? 0
+numPile: 8
+numPile: 7
+player-2 gains  
+	Mine
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-2 discards  
+	Estate
+player-2 discards  
+	Estate
+player-2 discards  
+	Ambassador
+player-2 discards  
+	Great_Hall
+player-2 draws  
+	Council_Room
+player-2 draws  
+	Silver
+player-2 draws  
+	Copper
+player-2 draws  
+	Estate
+player-2 draws  
+	Embargo
+Player: player-1 is playing
+Player.actionPhase Card: 
+	Ambassador
+TODO Ambassador Code******************************************
+Reveal a card from your hand.
+Return up to 2 copies of it to the Supply.
+Then each other player gains a copy of it.
+player-1 discards  
+	Ambassador
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 1
+Player.buyCard Card: 
+	Great_Hall
+Player.buyCard Card: 
+	Gold
+Player.buyCard Card: 
+	Mine
+Player.buyCard Card: 
+	Gardens
+Player.buyCard Card: 
+	Great_Hall
+Player.buyCard Card: 
+	Great_Hall
+Player.buyCard Card: 
+	Copper
+Curses? 1
+numPile: 2
+numPile: 1
+player-1 gains  
+	Curse
+numPile: 22
+numPile: 21
+player-1 gains  
+	Copper
+ --- --------------------------- --- 
+TO-DO endTurn 
+ --- --------------------------- --- 
+player-1 discards  
+	Estate
+player-1 discards  
+	Curse
+player-1 draws  
+	Great_Hall
+player-1 draws  
+	Ambassador
+player-1 draws  
+	Copper
+player-1 draws  
+	Silver
+player-1 draws  
+	Mine
+Player: player-2 is playing
+Player.actionPhase Card: 
+	Council_Room
+TODO Council Room Code******************************************
++4 Cards
+player-2 draws  
+	Silver
+player-2 draws  
+	Embargo
+player-2 draws  
+	Cutpurse
+player-2 draws  
+	Copper
++1 Buy
+Each other player draws a card.
+player-1 draws  
+	Copper
+player-2 discards  
+	Council_Room
+ --- --------------------------- --- 
+TO-DO playTreasureCard 
+ --- --------------------------- --- 
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Silver
+Player.playTreasure Card: 
+	Copper
+Player.playTreasure Card: 
+	Copper
+ --- --------------------------- --- 
+TO-DO buyCard 
+ --- --------------------------- --- 
+numBuys: 2
+Player.buyCard Card: 
+	Baron
+Curses? 0
+numPile: 8
+numPile: 7
+player-2 gains  
+	Baron
+Player.buyCard Card: 
+	Silver
+Player.buyCard Card: 
+	Gardens
+Player.buyCard Card: 
+	Baron
+Player.buyCard Card: 
+	Copper
+Curses? 1
+That pile is empty.
+</system-out>
+  </testcase>
+  <testcase classname="org.cs362.dominion.CardTest" name="gameStateStringTest" time="0.002"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="tributeTest" time="0.001"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="greatHallTest" time="0.002"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="feastTest" time="0.001"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="adventurerTest" time="0"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="testPlayerPrint" time="0.001"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="councilTest" time="0.001"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="embargoTest" time="0.001"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="smithyTest" time="0.001"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="remodelTest" time="0"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="cutpurseTest" time="0.001"/>
+  <testcase classname="org.cs362.dominion.CardTest" name="baronTest" time="0"/>
+</testsuite>
