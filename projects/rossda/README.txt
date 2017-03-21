@@ -6,5 +6,5 @@ mvn clean
 mvn compile
 mvn test
 
-If you want to run Cobertura it's already included in the pom.xml so it's just
-mvn cobertura:cobertura
+If you want to run PITest it's already included in the pom.xml so it's just
+mvn org.pitest:pitest-maven:mutationCoverage

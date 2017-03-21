@@ -55,7 +55,7 @@ public final class Randomness {
       throw new IllegalArgumentException("Expected non-empty list");
     return list.get(nextRandomInt(list.size()));
   }
-
+/*
 	public  static void main(String args[]){
 		
 //		Randomness.reset(10);	   
@@ -65,6 +65,6 @@ public final class Randomness {
 		}
 		System.exit(0);   
 	}
-
+*/
 
 }

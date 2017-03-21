@@ -76,6 +76,7 @@ public class Player implements Cloneable{
 			      discard.add(card);
 		      }else{
 		    	  System.out.println("The " + card.getCardName() + " pile is empty.");
+				  return false;
 		      }
 		      System.out.println(this.player_username+" gains "+ card.toString());
 		      return true;
@@ -189,11 +190,16 @@ public class Player implements Cloneable{
 						}
 						coins = (coins - c.getCost());
 						Card curse = Card.getCard(gameState.onBoard, CardName.Curse);
-						System.out.println("Curses? "+ gameState.embargoed.get(c).intValue());
-						for(int i=0; i < gameState.embargoed.get(c).intValue(); i++){
-							gameState.loseCard(curse);
-							gain(curse);
+						if(curse != null){
+							System.out.println("Curses? "+ gameState.embargoed.get(c).intValue());
+							for(int i=0; i < gameState.embargoed.get(c).intValue(); i++){
+								gameState.loseCard(curse);
+								gain(curse);
+							}
+						}else{
+							System.out.println("There are no more curse cards to gain.");
 						}
+
 						gameState.loseCard(c);
 						gain(c);
 						numBuys--;

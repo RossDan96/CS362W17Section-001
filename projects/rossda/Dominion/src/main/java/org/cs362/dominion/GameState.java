@@ -154,8 +154,11 @@ public class GameState implements Cloneable{
 		        	  //player ends turn
 		        	    player.endTurn();
 		         }
-		         if(turn==3)
+		         if(turn==400){
+		        	 System.out.println("That's 400 turns");
 		        	 break;
+		         }
+
 		      }
 		      return this.getWinners();
 		   }
